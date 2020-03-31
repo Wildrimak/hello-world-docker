@@ -1,7 +1,7 @@
 {
     "name": "dockernode",
     "version": "1.0.0",
-    "description": "",
+    "description": "1. Criar projeto node ```npm init```\r 2. Criar arquivo Dockerfile conforme o arquivo Dockerfile\r 3. ```npm install express``` \r 4. Criar arquivo .dockerignore e colocar o nodemodules\r 5. Verifique se o docker está instalado ```docker -v```\r 6. Verifique se o docker compose está instalado ```docker-compose -v```\r 7. Usado para rodar todos os comandos do Dockerfile ```docker build -t wildrimak/dockernode . ```\r 8. Esse comando roda a aplicação docker mas ele não será usado em dentrimento do docker-compose que irá o executar de forma automatica: ```docker run -p 3000:3000 -d wildrimak/dockernode``` -> A porta do navegador, a primeira (3000), chamará a porta do servidor no docker na segunda(3000)\r 9. Crie um arquivo docker-compose.yml conforme o arquivo docker-compose.yml\r 10. ```npm install nodemon```\r 11. ```docker-compose up```",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,7 +11,17 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "express": "^4.16.3",
+        "express": "^4.16.3"
+    },
+    "devDependencies": {
         "nodemon": "1.18.2"
-    }
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Wildrimak/hello-world-docker.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Wildrimak/hello-world-docker/issues"
+    },
+    "homepage": "https://github.com/Wildrimak/hello-world-docker#readme"
 }
